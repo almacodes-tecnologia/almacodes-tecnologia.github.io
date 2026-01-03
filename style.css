@@ -63,3 +63,43 @@ footer {
     font-size: 0.8rem;
     color: #9ca3af;
 }
+
+/* Sección de Aviso Legal */
+.disclaimer {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+/* Tarjetas de Proyecto */
+.card-proyecto {
+    background: white;
+    border: 1px solid #e5e7eb;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: left;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.card-proyecto:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-proyecto h3 {
+    margin-top: 0;
+    color: #2563eb;
+}
+
+.badge {
+    font-size: 0.7rem;
+    background: #f1f5f9;
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: #475569;
+}
