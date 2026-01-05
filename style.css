@@ -103,3 +103,21 @@ footer {
     border-radius: 4px;
     color: #475569;
 }
+
+.btn-cafe {
+    display: inline-block;
+    background-color: #ffdd00; /* Color típico de 'Buy me a coffee' */
+    color: #000000;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.btn-cafe:hover {
+    background-color: #ffc400;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
