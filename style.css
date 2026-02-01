@@ -1,200 +1,166 @@
 :root {
     --primary: #2563eb;
-    --text: #1f2937;
-    --bg: #ffffff;
+    --primary-light: #eff6ff;
+    --text: #1e293b;
+    --text-light: #64748b;
+    --bg: #f8fafc;
+    --card: #ffffff;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--bg);
     color: var(--text);
-    line-height: 1.6;
     margin: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
 
 .container {
-    max-width: 500px;
-    padding: 2rem;
-    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    padding: 2rem 0;
 }
 
-.highlight {
-    color: var(--primary);
+/* Header & Logo */
+.main-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
 }
+
+.logo-circle {
+    font-size: 3rem;
+    background: white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    margin: 0 auto 1rem;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+h1 span { color: var(--primary); }
 
 .subtitle {
-    color: #4b5563;
-    font-size: 1.1rem;
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
-.nav-links {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.btn-main {
-    background-color: var(--primary);
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.2s;
-}
-
-.btn-main:hover {
-    transform: translateY(-2px);
-}
-
-.btn-secondary {
-    color: #6b7280;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-footer {
-    margin-top: 3rem;
-    font-size: 0.8rem;
-    color: #9ca3af;
-}
-
-/* Sección de Aviso Legal */
-.disclaimer {
-    background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    padding: 1rem;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    color: #64748b;
-    margin-bottom: 2rem;
-    text-align: justify;
-}
-
-/* Tarjetas de Proyecto */
+/* Tarjetas */
 .card-proyecto {
-    background: white;
-    border: 1px solid #e5e7eb;
+    background: var(--card);
     padding: 1.5rem;
-    border-radius: 12px;
-    text-align: left;
-    margin-bottom: 1rem;
-    transition: box-shadow 0.3s ease;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
 }
 
-.card-proyecto:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.card-proyecto h3 {
-    margin-top: 0;
-    color: #2563eb;
-}
-
-.badge {
-    font-size: 0.7rem;
-    background: #f1f5f9;
-    padding: 3px 8px;
-    border-radius: 4px;
-    color: #475569;
-}
-
-.btn-cafe {
-    display: inline-block;
-    background-color: #ffdd00; /* Color típico de 'Buy me a coffee' */
-    color: #000000;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-    border: 1px solid #e2e8f0;
-}
-
-.btn-cafe:hover {
-    background-color: #ffc400;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* --- Nueva Cuadrícula de Funciones --- */
-.features-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-top: 1rem;
-}
-
-.feature-item {
-    background: #f8fafc;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #f1f5f9;
-}
-
-.feature-item strong {
-    display: block;
-    font-size: 0.9rem;
-    color: var(--primary);
-}
-
-.feature-item p {
-    font-size: 0.75rem;
-    margin: 0;
-    color: #64748b;
-}
-
-.feature-icon {
-    font-size: 1.2rem;
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* --- Tabla Técnica --- */
-.tech-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.85rem;
-    margin: 1rem 0;
-}
-
-.tech-table td {
-    padding: 8px 0;
-    border-bottom: 1px solid #f1f5f9;
-    color: #4b5563;
-}
-
-.tech-table td:last-child {
-    text-align: right;
+.section-title {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
     color: var(--text);
 }
 
-/* --- Galería (Lógica para ocultar si está vacía) --- */
-.gallery:not(:has(img)) {
-    display: none;
+/* Cuadrícula de Funciones */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
 }
 
-.screenshot-wrapper {
+.feature-item {
     display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    padding-bottom: 1rem;
-}
-
-.screenshot-wrapper img {
-    height: 250px;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: background 0.2s;
 }
 
-/* Ajuste móvil para la cuadrícula */
-@media (max-width: 400px) {
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
+.feature-item:hover { background: var(--primary-light); }
+
+.icon-bg {
+    background: var(--primary-light);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.2rem;
 }
+
+.feature-text strong { display: block; font-size: 0.95rem; }
+.feature-text p { margin: 0; font-size: 0.8rem; color: var(--text-light); }
+
+/* Ficha Técnica */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.tech-info {
+    background: var(--bg);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.tech-info span { display: block; font-size: 0.7rem; color: var(--text-light); text-transform: uppercase; }
+.tech-info strong { font-size: 0.85rem; }
+
+/* Botón Principal */
+.btn-main {
+    display: block;
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+    transition: transform 0.2s;
+}
+
+.btn-main:hover { transform: scale(1.02); }
+
+.security-tag {
+    font-size: 0.75rem;
+    color: #10b981;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Footer y Otros */
+.btn-secondary { color: var(--text-light); text-decoration: none; font-size: 0.9rem; }
+
+.btn-cafe {
+    display: inline-block;
+    background: #FFDD00;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+footer { text-align: center; margin-top: 2rem; color: var(--text-light); font-size: 0.8rem; }
+
+/* Galería */
+.gallery:not(:has(img)) { display: none; }
+.screenshot-wrapper { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 1rem; }
+.screenshot-wrapper img { height: 300px; border-radius: 15px; }
