@@ -164,3 +164,36 @@ footer { text-align: center; margin-top: 2rem; color: var(--text-light); font-si
 .gallery:not(:has(img)) { display: none; }
 .screenshot-wrapper { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 1rem; }
 .screenshot-wrapper img { height: 300px; border-radius: 15px; }
+
+/* Añadir esto para mejorar el espaciado de la bio */
+.bio p {
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Efecto hover para los items de la cuadrícula que ahora son enlaces */
+.feature-item {
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.feature-item:hover {
+    background: var(--primary-light);
+    border-color: rgba(37, 99, 235, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Estilo para el contenedor de Instagram/Proyectos */
+.features-grid {
+    margin-bottom: 1rem;
+}
+
+/* Mejora del footer */
+footer i {
+    display: block;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}

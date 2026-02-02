@@ -4,32 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>almaCodes | Tecnología y Sistemas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>¡Hola! Soy <span class="highlight">almaCodes</span></h1>
-            <p class="subtitle"><strong>Técnico de Sistemas</strong> por profesión, amante de la tecnología por vocación.</p>
+        <header class="main-header">
+            <div class="logo-circle">👨‍💻</div>
+            <h1>¡Hola! Soy <span>almaCodes</span></h1>
+            <p class="subtitle"><strong>Técnico de Sistemas</strong> por profesión,<br>amante de la tecnología por vocación.</p>
         </header>
         
-        <section class="bio">
-            <p>¿Por qué <strong>almaCodes</strong>? Es una pequeña dedicatoria a mis dos hijos. Cuando el caos familiar lo permite, me sumerjo en la tecnología para dar vida a ideas que tengo en mente.</p>
+        <section class="card-proyecto">
+            <h2 class="section-title">✨ El origen</h2>
+            <div class="bio">
+                <p>¿Por qué <strong>almaCodes</strong>? Es una pequeña dedicatoria a mis dos hijos. Cuando el caos familiar lo permite, me sumerjo en la tecnología para dar vida a ideas que tengo en mente.</p>
+            </div>
         </section>
         
-        <nav class="nav-links">
-            <a href="proyectos.html" class="btn-main">📂 Mis Experimentos Android</a>
-            <a href="https://www.instagram.com/almacodes.tecnologia/" class="btn-secondary" target="_blank">📸 Instagram</a>
-        </nav>
+        <section class="features-grid">
+            <a href="proyectos.html" class="feature-item" style="text-decoration: none; color: inherit;">
+                <div class="icon-bg">📂</div>
+                <div class="feature-text">
+                    <strong>Mis Experimentos Android</strong>
+                    <p>Explora las apps que estoy cocinando.</p>
+                </div>
+            </a>
 
-        <footer style="margin-top: 3rem; border-top: 1px solid #eee; padding-top: 2rem;">
-            <p><i>Aprendizaje constante</i></p>
-            <div style="margin-top: 1.5rem;">
+            <a href="https://www.instagram.com/almacodes.tecnologia/" class="feature-item" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="icon-bg">📸</div>
+                <div class="feature-text">
+                    <strong>Sígueme en Instagram</strong>
+                    <p>El día a día entre cables y código.</p>
+                </div>
+            </a>
+        </section>
+
+        <div style="margin-top: 2rem;">
+            <a href="proyectos.html" class="btn-main">Ver Catálogo de Apps</a>
+        </div>
+
+        <footer>
+            <div style="margin-bottom: 1.5rem; opacity: 0.6;">
+                <p><i>"Aprendizaje constante"</i></p>
+                <div style="height: 1px; width: 40px; background: var(--primary); margin: 10px auto;"></div>
+            </div>
+            
+            <div class="coffee-section">
                 <a href="https://www.paypal.me/AlmaCodesTecnologia" target="_blank" class="btn-cafe">
-                    ☕ Invitame a un café
+                    ☕ Invítame a un café
                 </a>
             </div>
+            <p style="margin-top: 2rem;">almaCodes © 2026</p>
         </footer>
     </div>
 </body>

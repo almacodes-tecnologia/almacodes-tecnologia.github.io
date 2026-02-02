@@ -4,36 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecos Culinarios | almaCodes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <nav><a href="proyectos.html" class="btn-secondary">← Volver a Proyectos</a></nav>
+        <nav style="margin-bottom: 2rem;">
+            <a href="proyectos.html" class="btn-secondary">← Volver a Proyectos</a>
+        </nav>
         
-        <h1>🍳 Ecos Culinarios</h1>
-        <p class="subtitle">Recetas centralizadas para casa y para el mundo.</p>
+        <header class="main-header">
+            <div class="logo-circle" style="background: #fff7ed; box-shadow: 0 10px 25px rgba(234, 88, 12, 0.1);">🍳</div>
+            <h1>Ecos <span>Culinarios</span></h1>
+            <p class="subtitle">Recetas centralizadas para casa y para el mundo.</p>
+        </header>
 
-        <section class="card">
-            <h3>Historia del Proyecto</h3>
-            <p><strong>Ecos Culinarios</strong> nace de una necesidad doméstica: le prometí a mi mujer que digitalizaría nuestras recetas para tenerlas siempre organizadas y accesibles para ambos en un mismo lugar.</p>
-            <p>Al final, decidí que si nos servía a nosotros, también podría servir para compartir con amigos, familiares y cualquier apasionado de la cocina que busque algo sencillo y directo.</p>
+        <section class="card-proyecto">
+            <h3 class="section-title">📖 Historia del Proyecto</h3>
+            <div class="bio">
+                <p><strong>Ecos Culinarios</strong> nace de una necesidad doméstica: le prometí a mi mujer que digitalizaría nuestras recetas para tenerlas siempre organizadas y accesibles en un mismo lugar.</p>
+                <p style="margin-top: 1rem;">Al final, decidí que si nos servía a nosotros, también podría servir para compartir con amigos, familiares y cualquier apasionado de la cocina.</p>
+            </div>
         </section>
 
-        <section class="download-zone" style="text-align: center; margin: 2rem 0;">
-            <h3>Descarga la Beta</h3>
-            <p>Versión v13.0.0</p>
+        <section class="card-proyecto">
+            <h3 class="section-title">¿Qué encontrarás en la App?</h3>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="icon-bg" style="background: #fff7ed;">📖</div>
+                    <div class="feature-text">
+                        <strong>Recetario Digital</strong>
+                        <p>Selección de recetas paso a paso.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-bg" style="background: #fff7ed;">⭐</div>
+                    <div class="feature-text">
+                        <strong>Favoritos</strong>
+                        <p>Guarda tus platos preferidos.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-bg" style="background: #fff7ed;">🎓</div>
+                    <div class="feature-text">
+                        <strong>Más que cocina</strong>
+                        <p>Técnicas y curiosidades gastronómicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="download-zone" style="text-align: center; margin: 2.5rem 0;">
+            
             <a href="https://raw.githubusercontent.com/almacodes-tecnologia/almacodes_apps/main/apk/ecos_culinarios/ecos_culinarios.apk" 
                class="btn-main" 
-               download="ecos_culinarios.apk">
-               Descargar Beta pruebas mias (APK)
+               download="ecos_culinarios.apk"
+               style="background: #ea580c; box-shadow: 0 10px 20px rgba(234, 88, 12, 0.2);">
+               Descargar APK
             </a>
+            
+            <p class="security-tag">✅ Archivo verificado y seguro</p>
         </section>
 
         <footer>
             <p>almaCodes | De nuestra cocina a la tuya.</p>
             <div style="margin-top: 1.5rem;">
                 <a href="https://www.paypal.me/AlmaCodesTecnologia" target="_blank" class="btn-cafe">
-                    ☕ Invitame a un café
+                    ☕ Invítame a un café
                 </a>
             </div>
         </footer>

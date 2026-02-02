@@ -4,47 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos | almaCodes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <nav style="text-align: left; margin-bottom: 2rem;">
+        <nav style="margin-bottom: 2rem;">
             <a href="index.html" class="btn-secondary">← Volver al inicio</a>
         </nav>
 
-        <header>
-            <h1>Laboratorio de Proyectos</h1>
-            <p>Este es un espacio personal dedicado al aprendizaje y la experimentación tecnológica.</p>
+        <header class="main-header" style="text-align: left;">
+            <h1>Laboratorio de <span>Proyectos</span></h1>
+            <p class="subtitle">Espacio personal dedicado al aprendizaje y la experimentación tecnológica.</p>
         </header>
 
-        <section class="disclaimer">
-            <p><strong>Nota legal y de transparencia:</strong> Los proyectos aquí expuestos son de carácter personal, educativo y sin ánimo de lucro. almaCodes no tiene afiliación oficial con organizaciones externas, empresas, marcas o entidades deportivas. El contenido se ofrece "tal cual" con fines demostrativos, como hobby y mi pasión por la tecnología.</p>
+        <section class="card-proyecto" style="background: #f1f5f9; border: none; box-shadow: none;">
+            <p style="font-size: 0.8rem; color: var(--text-light); margin: 0; line-height: 1.4;">
+                <strong>Nota legal y de transparencia:</strong> Los proyectos aquí expuestos son de carácter personal, educativo y sin ánimo de lucro. almaCodes no tiene afiliación oficial con organizaciones externas, empresas, marcas o entidades deportivas. El contenido se ofrece "tal cual" con fines demostrativos.
+            </p>
         </section>
 
-        <div class="listado-proyectos">
+        <div class="listado-proyectos" style="margin-top: 2rem;">
+            
             <div class="card-proyecto">
-                <h3>🚴 Ecos del Ciclismo</h3>
-                <p>Aplicación de consulta para amantes del ciclismo: clasificaciones, altimetrías e historias de este deporte.</p>
-                <a href="ecos_del_ciclismo.html" class="btn-main">Ver detalles y descargar APK</a>
+                <div class="feature-item">
+                    <div class="icon-bg">🚴</div>
+                    <div class="feature-text">
+                        <strong style="font-size: 1.2rem;">Ecos del Ciclismo</strong>
+                        <p>Clasificaciones, altimetrías e historias.</p>
+                    </div>
+                </div>
+                <a href="ecos_del_ciclismo.html" class="btn-main">Detalles y APK</a>
             </div>
 
-<div class="card-proyecto">
-    <h3>🌦️ Ecos Meteorológicos</h3>
-    <p>Consulta el tiempo y datos climáticos de forma limpia y directa.</p>
-    <a href="ecos_meteorologicos.html" class="btn-main">Ver detalles y descargar APK</a>
-</div>
+            <div class="card-proyecto">
+                <div class="feature-item">
+                    <div class="icon-bg">🌦️</div>
+                    <div class="feature-text">
+                        <strong style="font-size: 1.2rem;">Ecos Meteorológicos</strong>
+                        <p>Datos climáticos de forma limpia y directa.</p>
+                    </div>
+                </div>
+                <div class="tech-grid" style="margin-top: 1rem;">
+                </div>
+                <a href="ecos_meteorologicos.html" class="btn-main">Detalles y APK</a>
+            </div>
 
-<div class="card-proyecto">
-    <h3>🍳 Ecos Culinarios</h3>
-    <p>Visualizar recetas, técnicas y momentos gastronómicos. Tu cocina sin complicaciones.</p>
-    <a href="ecos_culinarios.html" class="btn-main">Ver detalles y descargar APK</a>
-</div>
+            <div class="card-proyecto">
+                <div class="feature-item">
+                    <div class="icon-bg">🍳</div>
+                    <div class="feature-text">
+                        <strong style="font-size: 1.2rem;">Ecos Culinarios</strong>
+                        <p>Recetas y técnicas sin complicaciones.</p>
+                    </div>
+                </div>
+                <div class="tech-grid" style="margin-top: 1rem;">
+                </div>
+                <a href="ecos_culinarios.html" class="btn-main">Detalles y APK</a>
+            </div>
 
-            <div class="card-proyecto" style="border-style: dashed; opacity: 0.6;">
-                <h3>🛠️ Nuevas Ideas en Desarrollo</h3>
-                <p>Actualmente trabajando en otro tipo de aplicaciones, más detalles próximamente...</p>
-                <span class="badge">En incubación</span>
+            <div class="card-proyecto" style="border: 2px dashed #cbd5e1; background: transparent; box-shadow: none; opacity: 0.7;">
+                <div class="feature-item">
+                    <div class="icon-bg" style="background: #e2e8f0;">🛠️</div>
+                    <div class="feature-text">
+                        <strong>Nuevas Ideas</strong>
+                        <p>Cocinando algo nuevo...</p>
+                    </div>
+                </div>
+                <p style="font-size: 0.75rem; text-align: center; margin-top: 1rem; color: var(--primary); font-weight: bold; text-transform: uppercase;">En incubación</p>
             </div>
         </div>
 
