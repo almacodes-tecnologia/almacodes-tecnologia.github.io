@@ -19,37 +19,15 @@
             <p>Al final, decidí que si nos servía a nosotros, también podría servir para compartir con amigos, familiares y cualquier apasionado de la cocina que busque algo sencillo y directo.</p>
         </section>
 
-<section class="download-zone">
-    <h3>Descarga la Beta de githubcontent</h3>
-    <p>Versión v13.0.0</p>
-    <a href="#" onclick="descargarApk(); return false;" class="btn-main">
-        Descargar Beta (APK)
-    </a>
-</section>
-
-<script>
-function descargarApk() {
-    const url = 'http://raw.githubusercontent.com/almacodes-tecnologia/almacodes_apps/main/apk/ecos_culinarios/ecos_culinarios.apk';
-    const link = document.createElement('a');
-    link.href = url;
-    // Forzamos que se abra en una pestaña nueva para que Brave no bloquee la actual
-    link.target = '_blank'; 
-    link.download = 'ecos_culinarios.apk';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-</script>
-
-        <section class="download-zone">
-    <h3>Descarga la Beta</h3>
-    <p>Versión v53.0.0</p>
-<a href="#" 
-   onclick="window.location.href='https://github.com/almacodes-tecnologia/almacodes-tecnologia.github.io/releases/latest/download/ecos_culinarios.apk'; return false;" 
-   class="btn-main">
-   Descargar Beta (APK)
-</a>
-    </section>
+        <section class="download-zone" style="text-align: center; margin: 2rem 0;">
+            <h3>Descarga la Beta</h3>
+            <p>Versión v13.0.0</p>
+            <a href="https://raw.githubusercontent.com/almacodes-tecnologia/almacodes_apps/main/apk/ecos_culinarios/ecos_culinarios.apk" 
+               class="btn-main" 
+               download="ecos_culinarios.apk">
+               Descargar Beta pruebas mias (APK)
+            </a>
+        </section>
 
         <footer>
             <p>almaCodes | De nuestra cocina a la tuya.</p>
