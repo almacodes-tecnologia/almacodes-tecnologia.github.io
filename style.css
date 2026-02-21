@@ -1,6 +1,7 @@
 :root {
     --primary: #2563eb;
     --primary-light: #eff6ff;
+    --accent-copper: #b17d6d;
     --text: #1e293b;
     --text-light: #64748b;
     --bg: #f8fafc;
@@ -14,186 +15,89 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
 }
 
 .container {
-    max-width: 450px;
     width: 90%;
+    max-width: 450px;
     padding: 2rem 0;
 }
 
-/* Header & Logo */
-.main-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
-
-.logo-circle {
-    font-size: 3rem;
-    background: white;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 24px;
-    margin: 0 auto 1rem;
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
-}
-
-h1 {
-    font-weight: 800;
-    font-size: 1.8rem;
-    margin: 0;
-}
-
+.main-header { text-align: center; margin-bottom: 2rem; }
+h1 { font-weight: 800; font-size: 1.8rem; margin: 0; }
 h1 span { color: var(--primary); }
+.subtitle { color: var(--text-light); font-size: 0.9rem; }
 
-.subtitle {
-    color: var(--text-light);
-    font-size: 1rem;
-    margin-top: 0.5rem;
+.logo-container {
+    width: 190px; /* Tamaño un poco mayor para lucir el logo */
+    height: auto;
+    margin: 0 auto 1.5rem;
+    display: block;
+    padding: 8px; /* Espacio entre el logo y el marco */
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Borde casi invisible */
+    border-radius: 28px; /* Un poco más que el logo para que encaje */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Sombra suave */
 }
 
-/* Tarjetas */
+.main-logo {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block; /* Evita espacios extra debajo de la imagen */
+}
+
 .card-proyecto {
     background: var(--card);
     padding: 1.5rem;
     border-radius: 20px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    margin-bottom: 1.5rem;
-}
-
-.section-title {
-    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     margin-bottom: 1.2rem;
-    color: var(--text);
 }
 
-/* Cuadrícula de Funciones */
-.features-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-}
+.nota-legal { background: #f1f5f9; box-shadow: none; font-size: 0.75rem; color: var(--text-light); }
 
-.feature-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px;
-    border-radius: 12px;
-    transition: background 0.2s;
-}
-
-.feature-item:hover { background: var(--primary-light); }
-
+.feature-item { display: flex; align-items: center; gap: 12px; }
 .icon-bg {
     background: var(--primary-light);
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    font-size: 1.2rem;
+    width: 45px; height: 45px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 12px; font-size: 1.2rem;
 }
 
-.feature-text strong { display: block; font-size: 0.95rem; }
-.feature-text p { margin: 0; font-size: 0.8rem; color: var(--text-light); }
+.feature-text strong { display: block; font-size: 1.1rem; }
+.feature-text p { margin: 0; font-size: 0.85rem; color: var(--text-light); }
 
-/* Ficha Técnica */
-.tech-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.tech-info {
-    background: var(--bg);
-    padding: 10px;
-    border-radius: 12px;
-}
-
-.tech-info span { display: block; font-size: 0.7rem; color: var(--text-light); text-transform: uppercase; }
-.tech-info strong { font-size: 0.85rem; }
-
-/* Botón Principal */
-.btn-main {
-    display: block;
-    background: var(--primary);
-    color: white;
-    text-align: center;
-    padding: 16px;
-    border-radius: 15px;
-    text-decoration: none;
+.tech-tags-container { display: flex; flex-wrap: wrap; gap: 6px; margin: 1rem 0; }
+.tech-tag {
+    background: #fff7ed;
+    color: var(--accent-copper);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.65rem;
     font-weight: 700;
-    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
-    transition: transform 0.2s;
+    border: 1px solid #ffedd5;
 }
 
-.btn-main:hover { transform: scale(1.02); }
-
-.security-tag {
-    font-size: 0.75rem;
-    color: #10b981;
-    margin-top: 1rem;
-    text-align: center;
+.btn-main {
+    display: block; background: var(--primary); color: white;
+    text-align: center; padding: 12px; border-radius: 12px;
+    text-decoration: none; font-weight: 700;
 }
 
-/* Footer y Otros */
-.btn-secondary { color: var(--text-light); text-decoration: none; font-size: 0.9rem; }
+.in-progress { border: 2px dashed #cbd5e1; background: transparent; opacity: 0.7; }
+.status-label { text-align: center; color: var(--primary); font-weight: 800; font-size: 0.7rem; margin-top: 1rem; }
 
 .btn-cafe {
-    display: inline-block;
-    background: #FFDD00;
-    padding: 8px 16px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 0.85rem;
+    background: #FFDD00; padding: 8px 16px; border-radius: 10px;
+    text-decoration: none; color: black; font-weight: 600; font-size: 0.8rem;
 }
 
-footer { text-align: center; margin-top: 2rem; color: var(--text-light); font-size: 0.8rem; }
-
-/* Galería */
-.gallery:not(:has(img)) { display: none; }
-.screenshot-wrapper { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 1rem; }
-.screenshot-wrapper img { height: 300px; border-radius: 15px; }
-
-/* Añadir esto para mejorar el espaciado de la bio */
-.bio p {
-    line-height: 1.6;
-    margin: 0;
-    color: var(--text-light);
-    font-size: 0.95rem;
+@media (min-width: 800px) {
+    .container { max-width: 900px; }
+    .listado-proyectos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .nota-legal { grid-column: span 2; }
 }
 
-/* Efecto hover para los items de la cuadrícula que ahora son enlaces */
-.feature-item {
-    cursor: pointer;
-    border: 1px solid transparent;
-}
-
-.feature-item:hover {
-    background: var(--primary-light);
-    border-color: rgba(37, 99, 235, 0.1);
-    transform: translateY(-2px);
-}
-
-/* Estilo para el contenedor de Instagram/Proyectos */
-.features-grid {
-    margin-bottom: 1rem;
-}
-
-/* Mejora del footer */
-footer i {
-    display: block;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
+footer { text-align: center; margin-top: 2rem; font-size: 0.8rem; color: var(--text-light); }
+.btn-secondary { text-decoration: none; color: var(--text-light); font-size: 0.9rem; }
