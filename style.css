@@ -100,4 +100,156 @@ h1 span { color: var(--primary); }
 }
 
 footer { text-align: center; margin-top: 2rem; font-size: 0.8rem; color: var(--text-light); }
-.btn-secondary { text-decoration: none; color: var(--text-light); font-size: 0.9rem; }
+.btn-secondary {
+    display: inline-block;
+    background: white;
+    color: var(--text);
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    transition: all 0.15s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.nav-back{
+margin-bottom:2rem;
+}
+
+.logo-circle{
+width:70px;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:20px;
+font-size:32px;
+margin:auto;
+margin-bottom:1rem;
+}
+
+.logo-circle.ciclismo{
+background:#fefce8;
+box-shadow:0 10px 25px rgba(234,179,8,0.1);
+}
+
+.icon-bg.ciclismo{
+background:#fefce8;
+}
+
+.intro-text{
+font-size:0.9rem;
+color:var(--text-light);
+line-height:1.5;
+}
+
+.gallery {
+  display: flex;           /* línea horizontal */
+  gap: 12px;               /* separación entre imágenes */
+  overflow-x: auto;        /* scroll horizontal si exceden el ancho */
+  justify-content: center; /* centrado de los elementos */
+  padding: 0 10px;         /* espacio a los lados */
+  margin-bottom: 2rem;
+}
+
+.gallery img {
+  height: 220px;           /* altura uniforme */
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  flex-shrink: 0;          /* evita que se encojan al hacer scroll */
+}
+
+.section-title{
+margin-bottom:1rem;
+font-size:1.1rem;
+}
+
+.features-grid{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.download-zone{
+text-align:center;
+margin:2.5rem 0;
+}
+
+.download-zone h3{
+margin-bottom:1.5rem;
+font-size:1.1rem;
+}
+
+.ciclismo-download{
+background:#ca8a04;
+box-shadow:0 10px 20px rgba(202,138,4,0.2);
+}
+
+.store-links{
+display:flex;
+justify-content:center;
+gap:14px;
+margin-top:1.2rem;
+}
+
+.store-badge img{
+height:40px;
+}
+
+.itch-btn{
+background:#fa5c5c;
+color:white;
+padding:8px 14px;
+border-radius:8px;
+font-size:0.8rem;
+text-decoration:none;
+font-weight:600;
+}
+
+.security-tag{
+font-size:0.75rem;
+color:var(--text-light);
+margin-top:8px;
+}
+
+.footer-coffee{
+margin-top:1rem;
+}
+
+.logo-circle.meteo{
+background:#ecf8ff;
+box-shadow:0 10px 25px rgba(6,182,212,0.1);
+}
+
+.icon-bg.meteo{
+background:#ecf8ff;
+}
+
+.meteo-download{
+background:#0891b2;
+box-shadow:0 10px 20px rgba(8,145,178,0.2);
+}
+
+.meteo-note{
+border-left:5px solid #06b6d4;
+background:#f0f9ff;
+}
+
+.meteo-note p{
+margin:0;
+}
+
+.meteo-note small{
+display:block;
+margin-top:6px;
+font-size:0.85rem;
+color:var(--text-light);
+}
