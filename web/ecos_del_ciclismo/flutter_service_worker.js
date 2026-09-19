@@ -6,7 +6,7 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {"assets/AssetManifest.bin": "9546e6060e33f5e9a4a3fde5206b1bd3",
 "assets/AssetManifest.bin.json": "350f0173220892be1ef54527c6f88931",
 "assets/AssetManifest.json": "7bbc5c2f1346ce843752aa51c7f609fc",
-"assets/assets/hall_of_fame.json": "39a875fab613402304a30eee4068e93d",
+"assets/assets/hall_of_fame.json": "5a2c2a76337d57706f8795c28809041a",
 "assets/assets/imagenes/altimetria/alemania.webp": "1affe6e564d137e3344030ee6cc62e82",
 "assets/assets/imagenes/altimetria/andorra.webp": "64efc63ae6d41e9fe1db619975625215",
 "assets/assets/imagenes/altimetria/argentina.webp": "b47f0b44e2e7f4aae25e1b84ebaf09b0",
@@ -172,16 +172,16 @@ const RESOURCES = {"assets/AssetManifest.bin": "9546e6060e33f5e9a4a3fde5206b1bd3
 "canvaskit/skwasm_heavy.wasm": "8034ad26ba2485dab2fd49bdd786837b",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "888483df48293866f9f41d3d9274a779",
-"flutter_bootstrap.js": "d6fe2642f9d5eee63da7349b5da31929",
+"flutter_bootstrap.js": "054198d4af25729e475928abb940505a",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "index.html": "a858f78661ef0310769855426834d8ee",
 "/": "a858f78661ef0310769855426834d8ee",
-"main.dart.js": "d98ea5b4c97ae5c0600dd6475774b81d",
+"main.dart.js": "32b3adc6381cbae6ba82ac1045d7c09b",
 "manifest.json": "59cba84417d7c69bf9a79f18835c2114",
-"version.json": "f99de0542847873d1267d5d9fe9910be"};
+"version.json": "34cb390daba70372665ab898dee44cf2"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
